@@ -42,7 +42,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.jeffreyneer.pdftools.main</mainClass>
+                            <mainClass>main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

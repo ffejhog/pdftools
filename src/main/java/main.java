@@ -6,8 +6,9 @@ import java.io.IOException;
 public class main {
 
     public static void main(String args[]){
-        if(args.length != 3){
-            System.out.print("Need 3 args mode 1 - ziper, 2 - regualer");
+        if(args.length != 4){
+            System.out.print("Need 4 args \n mode 1 - ziper merge, 2 - regular merge");
+            return;
         }
         File in1 = new File(args[1]);
         File in2 = new File(args[2]);
@@ -36,7 +37,7 @@ public class main {
                 e.printStackTrace();
             }
         }else{
-            System.out.print("mode 1 - ziper, 2 - regualer");
+            System.out.print("mode 1 - ziper merge, 2 - regular merge");
         }
 
 
