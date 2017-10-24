@@ -18,4 +18,19 @@ public class repaginator {
         return ret;
 
     }
+
+    public PDDocument merge(PDDocument doc1, PDDocument doc2) {
+        PDDocument ret = new PDDocument();
+
+        for(int i = 0; i<doc1.getNumberOfPages();i++){
+            ret.addPage(doc1.getPage(i));
+        }
+
+        for(int i = 0; i<doc2.getNumberOfPages();i++){
+            ret.addPage(doc2.getPage(i));
+        }
+
+        return ret;
+
+    }
 }
